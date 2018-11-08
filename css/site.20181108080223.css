@@ -1,0 +1,943 @@
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}audio,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}img{border:0}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=submit]{-webkit-appearance:button;cursor:pointer;box-sizing:border-box}input[type=text]{-webkit-appearance:none;appearance: none;box-sizing:border-box}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;box-sizing:border-box;border-color:#ddd}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+body,div{font-size:0;}
+p, span,h1,h2,h3,h4,h5,h6{margin:0;word-spacing:normal;word-wrap:break-word;-ms-word-wrap:break-word;pointer-events:auto;}
+sup{font-size:inherit;vertical-align:baseline;position:relative;top:-0.4em;}
+sub{font-size:inherit;vertical-align:baseline;position:relative;top:0.4em;}
+ul{display:block;word-spacing:normal;word-wrap:break-word;list-style-type:none;margin:0;-moz-padding-start:0;-khtml-padding-start:0;-webkit-padding-start:0;-o-padding-start:0;-padding-start:0;-webkit-margin-before:0;-webkit-margin-after:0;}
+li{display:block;}
+li p{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select::none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
+form{display:inline-block;}
+a{text-decoration:inherit;color:inherit;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+textarea{resize:none;}
+.shm-l{float:left;clear:left;}
+.shm-r{float:right;clear:right;}
+.whitespacefix{word-spacing:-1px;}
+video:not(#video_background):not(.videoinline){width:100%;max-width:900px;}
+video:-webkit-full-screen{max-width:100% !important;}
+video:-moz-full-screen{max-width:100% !important;}
+video:-ms-fullscreen{max-width:100% !important;}
+video:fullscreen{max-width:100% !important;}
+.player1.fullscreen1-active video{max-width:100% !important;}
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+#body{background-color:rgb(255,255,255);}
+.pos{position:relative;margin-top:0;}
+.vis{display:block;vertical-align:top;}
+.section{pointer-events:none;min-width:1200px;width:1200px;margin-left:auto;margin-right:auto;}
+.vis-2{display:inline-block;vertical-align:top;}
+.pos-2{position:relative;margin-left:67px;margin-top:0;}
+.size{min-width:1132px;width:1132px;min-height:735px;}
+.pos-3{position:relative;margin-left:0;margin-top:63px;}
+.size-2{min-width:514px;width:514px;min-height:633px;}
+.colwrapper{line-height:0;}
+.vis-3{display:inline-block;vertical-align:top;overflow:hidden;}
+.pos-4{position:relative;margin-left:0;margin-top:0;}
+.size-3{min-width:65px;width:65px;min-height:63px;height:63px;}
+.cont-2{z-index:2;pointer-events:auto;}
+.para{padding-top:0;text-indent:0;padding-right:0;text-align:left;}
+.font{font-family:"Gilroy-Bold";font-size:36px;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;color:rgb(0,0,0);background-color:initial;line-height:62px;letter-spacing:normal;text-shadow:none;}
+.pos-5{position:relative;margin-left:0;margin-top:33px;}
+.size-4{min-width:492px;width:492px;min-height:101px;height:101px;}
+.cont-3{z-index:12;pointer-events:auto;}
+.font-2{font-family:"TypoPRO Montserrat";font-size:60px;font-weight:700;font-style:normal;text-decoration:none;text-transform:none;color:rgb(0,0,0);background-color:initial;line-height:100px;letter-spacing:normal;text-shadow:none;}
+.pos-6{position:relative;margin-left:0;margin-top:33px;}
+.size-5{min-width:514px;width:514px;min-height:101px;height:101px;}
+.cont-4{z-index:4;pointer-events:auto;}
+.size-6{min-width:492px;width:492px;min-height:103px;}
+.size-7{min-width:207px;width:207px;min-height:103px;height:103px;}
+.cont-5{z-index:5;pointer-events:auto;}
+.pos-7{position:relative;margin-left:65px;margin-top:0;}
+.size-8{min-width:220px;width:220px;min-height:103px;height:103px;}
+.cont-6{z-index:6;pointer-events:auto;}
+.pos-8{position:relative;margin-left:0;margin-top:47px;}
+.size-9{min-width:378px;width:378px;min-height:29px;}
+.pos-9{position:relative;margin-left:0;margin-top:1px;}
+.size-10{min-width:80px;width:80px;min-height:28px;height:28px;}
+.cont-7{z-index:3;pointer-events:auto;}
+.font-3{font-family:TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;color:rgb(0,0,0);background-color:initial;line-height:28px;letter-spacing:normal;text-shadow:none;}
+.pos-10{position:relative;margin-left:192px;margin-top:0;}
+.size-11{min-width:106px;width:106px;min-height:29px;height:29px;}
+.cont-8{pointer-events:auto;}
+.font-4{font-family:TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;font-size:16px;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;color:rgb(0,0,0);background-color:initial;line-height:26px;letter-spacing:normal;text-shadow:none;}
+.pos-11{position:relative;margin-left:0;margin-top:14px;}
+.size-12{min-width:391px;width:391px;min-height:36px;}
+.size-13{min-width:118px;width:118px;min-height:36px;height:36px;}
+.cont-9{z-index:7;pointer-events:auto;}
+.font-5{font-family:TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;font-size:20px;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;color:rgb(0,0,0);background-color:initial;line-height:32px;letter-spacing:normal;text-shadow:none;}
+.pos-12{position:relative;margin-left:154px;margin-top:4px;}
+.size-14{min-width:119px;width:119px;min-height:29px;height:29px;}
+.pos-13{position:relative;margin-left:1px;margin-top:13px;}
+.size-15{min-width:377px;width:377px;min-height:27px;}
+.size-16{min-width:128px;width:128px;min-height:27px;height:27px;}
+.pos-14{position:relative;margin-left:143px;margin-top:0;}
+.size-17{min-width:106px;width:106px;min-height:27px;height:27px;}
+.pos-15{position:relative;margin-left:176px;margin-top:0;}
+.size-18{min-width:442px;width:442px;min-height:735px;height:735px;}
+.cont-10{z-index:1;pointer-events:auto;}
+.img{position:absolute;left:0;width:442px;height:735px;top:0;border:0;}
+.img-2{left:0;width:442px;height:735px;top:0;display:inline-block;}
+@media (max-width:1199px) {
+.section{min-width:320px;width:320px;}
+.pos-2{margin-left:25px;}
+.size{min-width:273px;width:273px;min-height:455px;}
+.pos-3{margin-top:0;}
+.size-2{min-width:273px;width:273px;min-height:455px;}
+.size-3{min-width:119px;width:119px;min-height:125px;height:125px;}
+.font{font-size:60px;line-height:104px;}
+.pos-5{margin-top:154px;}
+.size-4{min-width:258px;width:258px;min-height:54px;height:54px;}
+.font-2{font-size:32px;line-height:54px;}
+.pos-6{margin-top:7px;}
+.size-5{min-width:273px;width:273px;min-height:54px;height:54px;}
+.size-6{min-width:252px;width:252px;min-height:54px;}
+.size-7{min-width:108px;width:108px;min-height:54px;height:54px;}
+.pos-7{margin-left:27px;}
+.size-8{min-width:117px;width:117px;min-height:54px;height:54px;}
+.pos-8{margin-top:-310px;}
+.size-9{min-width:50px;width:50px;min-height:81px;}
+.pos-9{margin-top:0;}
+.size-10{min-width:42px;width:42px;min-height:18px;height:18px;}
+.font-3{font-size:10px;line-height:16px;}
+.pos-10{margin-left:0;margin-top:50px;}
+.size-11{min-width:50px;width:50px;min-height:13px;height:13px;}
+.font-4{font-size:8px;line-height:12px;}
+.pos-11{margin-left:-50px;margin-top:-293px;}
+.size-12{min-width:82px;width:82px;min-height:79px;}
+.size-13{min-width:82px;width:82px;min-height:22px;height:22px;}
+.font-5{font-size:13px;line-height:21px;}
+.pos-12{margin-left:0;margin-top:43px;}
+.size-14{min-width:60px;width:60px;min-height:14px;height:14px;}
+.pos-13{margin-left:-82px;margin-top:-270px;}
+.size-15{min-width:54px;width:54px;min-height:70px;}
+.size-16{min-width:54px;width:54px;min-height:15px;height:15px;}
+.pos-14{margin-left:0;margin-top:41px;}
+.size-17{min-width:54px;width:54px;min-height:14px;height:14px;}
+.pos-15{margin-left:119px;margin-top:-455px;}
+.size-18{min-width:154px;width:154px;min-height:255px;height:255px;}
+.img{width:154px;height:255px;}
+.img-2{width:154px;height:255px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-16{position:relative;margin-top:63px;}
+.pos-17{position:relative;margin-left:68px;margin-top:0;}
+.size-19{min-width:65px;width:65px;min-height:62px;height:62px;}
+.font-6{font-family:"Gilroy-Bold";font-size:35px;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;color:rgb(0,0,0);background-color:initial;line-height:61px;letter-spacing:normal;text-shadow:none;}
+.pos-18{position:relative;margin-left:12px;margin-top:61px;}
+.size-20{min-width:1120px;width:1120px;min-height:641px;}
+.pos-19{position:relative;margin-left:0;margin-top:0;}
+.size-21{min-width:114px;width:114px;min-height:27px;height:27px;}
+.font-7{font-family:"TypoPRO Montserrat";font-size:14px;font-weight:700;font-style:normal;text-decoration:none;text-transform:none;color:rgb(128,128,128);background-color:initial;line-height:24px;letter-spacing:normal;text-shadow:none;}
+.pos-20{position:relative;margin-left:-90px;margin-top:71px;}
+.size-22{min-width:272px;width:272px;min-height:480px;}
+.size-23{min-width:272px;width:272px;min-height:42px;height:42px;}
+.pos-21{margin-left:30px;}
+.para-2{padding-top:0;text-indent:-20px;padding-right:0;text-align:left;}
+.font-8{font-family:"TypoPRO Montserrat";font-size:24px;font-weight:700;font-style:normal;text-decoration:none;text-transform:none;color:rgb(239,181,0);background-color:initial;line-height:41px;letter-spacing:normal;text-shadow:none;}
+.font-9{font-family:"TypoPRO Montserrat";font-size:24px;font-weight:700;font-style:normal;text-decoration:none;text-transform:none;color:rgb(0,0,0);background-color:initial;line-height:41px;letter-spacing:normal;text-shadow:none;}
+.font-10{font-family:"TypoPRO Montserrat";font-size:24px;font-weight:700;font-style:normal;text-decoration:none;text-transform:none;color:rgb(0,0,0);background-color:initial;line-height:41px;letter-spacing:normal;text-shadow:none;}
+.pos-22{position:relative;margin-left:30px;margin-top:21px;}
+.size-24{min-width:210px;width:210px;min-height:42px;height:42px;}
+.pos-23{position:relative;margin-left:30px;margin-top:20px;}
+.size-25{min-width:240px;width:240px;min-height:42px;height:42px;}
+.size-26{min-width:225px;width:225px;min-height:42px;height:42px;}
+.cont-11{z-index:9;pointer-events:auto;}
+.size-27{min-width:92px;width:92px;min-height:42px;height:42px;}
+.size-28{min-width:167px;width:167px;min-height:42px;height:42px;}
+.cont-12{z-index:8;pointer-events:auto;}
+.size-29{min-width:153px;width:153px;min-height:42px;height:42px;}
+.cont-13{z-index:10;pointer-events:auto;}
+.size-30{min-width:201px;width:201px;min-height:42px;height:42px;}
+.cont-14{z-index:11;pointer-events:auto;}
+.pos-24{position:relative;margin-left:104px;margin-top:0;}
+.size-31{min-width:720px;width:720px;min-height:641px;height:641px;}
+.img-3{position:absolute;left:130px;width:459px;height:641px;top:0;border:0;}
+.img-4{left:130px;width:459px;height:641px;top:0;display:inline-block;}
+@media (max-width:1199px) {
+.pos-16{margin-top:10px;}
+.pos-17{margin-left:14px;}
+.size-19{min-width:85px;width:85px;min-height:79px;height:79px;}
+.font-6{font-size:45px;line-height:78px;}
+.pos-18{margin-left:4px;margin-top:5px;}
+.size-20{min-width:313px;width:313px;min-height:270px;}
+.pos-19{margin-left:10px;}
+.size-21{min-width:85px;width:85px;min-height:18px;height:18px;}
+.font-7{font-size:10px;line-height:17px;}
+.pos-20{margin-left:-95px;margin-top:27px;}
+.size-22{min-width:91px;width:91px;min-height:163px;}
+.size-23{min-width:87px;width:87px;min-height:16px;height:16px;}
+.pos-21{margin-left:8px;}
+.para-2{text-indent:-5px;}
+.font-8{font-size:8px;color:rgb(242,184,0);line-height:13px;}
+.font-9{font-size:6px;line-height:10px;}
+.font-10{font-size:8px;line-height:13px;}
+.pos-22{margin-left:10px;margin-top:5px;}
+.size-24{min-width:70px;width:70px;min-height:16px;height:16px;}
+.pos-23{margin-left:10px;margin-top:5px;}
+.size-25{min-width:81px;width:81px;min-height:16px;height:16px;}
+.size-26{min-width:77px;width:77px;min-height:16px;height:16px;}
+.size-27{min-width:29px;width:29px;min-height:16px;height:16px;}
+.size-28{min-width:59px;width:59px;min-height:16px;height:16px;}
+.size-29{min-width:55px;width:55px;min-height:16px;height:16px;}
+.size-30{min-width:70px;width:70px;min-height:16px;height:16px;}
+.pos-24{margin-left:4px;}
+.size-31{min-width:218px;width:218px;min-height:270px;height:270px;}
+.img-3{left:12px;width:194px;height:270px;}
+.img-4{left:12px;width:194px;height:270px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-25{position:relative;margin-left:12px;margin-top:61px;}
+.size-32{min-width:1120px;width:1120px;min-height:641px;}
+.pos-26{position:relative;margin-left:0;margin-top:0;}
+.pos-27{position:relative;margin-left:-90px;margin-top:134px;}
+.size-33{min-width:243px;width:243px;min-height:42px;height:42px;}
+.para-3{padding-top:0;text-indent:-20px;padding-right:0;text-align:left;}
+.font-11{font-family:"TypoPRO Montserrat";font-size:24px;font-weight:700;font-style:normal;text-decoration:none;text-transform:none;color:rgb(239,181,0);background-color:initial;line-height:41px;letter-spacing:normal;text-shadow:none;}
+.pos-28{position:relative;margin-left:-213px;margin-top:71px;}
+.size-34{min-width:272px;width:272px;min-height:480px;}
+.pos-29{position:relative;margin-left:0;margin-top:83px;}
+.pos-30{position:relative;margin-left:0;margin-top:21px;}
+.pos-31{position:relative;margin-left:0;margin-top:20px;}
+.pos-32{position:relative;margin-left:-92px;margin-top:83px;}
+.pos-33{position:relative;margin-left:74px;margin-top:0;}
+.img-5{position:absolute;left:108px;width:504px;height:641px;top:0;border:0;}
+.img-6{left:108px;width:504px;height:641px;top:0;display:inline-block;}
+@media (max-width:1199px) {
+.pos-25{margin-left:6px;margin-top:5px;}
+.size-32{min-width:311px;width:311px;min-height:270px;}
+.pos-26{margin-left:8px;}
+.pos-27{margin-left:-93px;margin-top:48px;}
+.size-33{min-width:81px;width:81px;min-height:16px;height:16px;}
+.para-3{text-indent:-6px;}
+.font-11{font-size:8px;line-height:13px;}
+.pos-28{margin-left:-73px;margin-top:27px;}
+.size-34{min-width:87px;width:87px;min-height:163px;}
+.pos-29{margin-top:26px;}
+.pos-30{margin-top:5px;}
+.pos-31{margin-top:5px;}
+.pos-32{margin-left:0;margin-top:5px;}
+.pos-33{margin-left:93px;margin-top:-190px;}
+.img-5{left:3px;width:213px;height:270px;}
+.img-6{left:3px;width:213px;height:270px;}
+}
+.slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -ms-touch-action: none; -webkit-tap-highlight-color: transparent; }
+.slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
+.slick-list:focus { outline: none; }
+.slick-loading .slick-list { background: white url("ajax-loader.gif") center center no-repeat; }
+.slick-list.dragging { cursor: pointer; cursor: hand; }
+.slick-slider .slick-list, .slick-track, .slick-slide, .slick-slide img { -webkit-transform: translate(0, 0); -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
+.slick-track { position: relative; left: 0; top: 0; display: block; zoom: 1; }
+.slick-track:before, .slick-track:after { content: ""; display: table; }
+.slick-track:after { clear: both; }
+.slick-loading .slick-track { visibility: hidden; }
+.slick-slide { float: left; height: 100%; min-height: 1px; display: none; }
+.slick-slide img { display: block; }
+.slick-slide.slick-loading img { display: none; }
+.slick-slide.dragging img { pointer-events: none; }
+.slick-initialized .slick-slide { display: block; visibility: visible !important; }
+.slick-loading .slick-slide { visibility: hidden; }
+.slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
+@font-face { font-family: "slick"; src: url("slick.eot"); src: url("slick.eot?#iefix") format("embedded-opentype"), url("slick.woff") format("woff"), url("slick.ttf") format("truetype"), url("slick.svg#slick") format("svg"); font-weight: normal; font-style: normal; }
+.slick-prev:before { content: "\2190"; }
+.slick-next:before { content: "\2192"; }
+.slick-prev, .slick-next { position: absolute; display: block; line-height: 0; font-size: 0; cursor: pointer; background: transparent; color: transparent; top: 50%; padding: 0; border: none; outline: none; }
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus { outline: none; background: transparent; color: transparent; }
+.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before { opacity: 1; }
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
+.slick-prev:before, .slick-next:before { font-family: "slick"; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.slick-dots { position: absolute; list-style: none; display: block; text-align: center; padding: 0; width: 100%; }
+.slick-dots li { position: relative; display: inline-block; padding: 0; cursor: pointer; }
+.slick-dots li button:hover, .slick-dots li button:focus { outline: none; }
+.slick-dots li button:hover:before, .slick-dots li button:focus:before { opacity: 1; }
+.slick-dots li button { border: 0; background: transparent; display: block; outline: none; line-height: 0; font-size: 0; color: transparent; padding: 5px; cursor: pointer; }
+.slick-dots li button:before { position: absolute; top: 0; left: 0; content: "\2022"; font-family: "slick"; text-align: center; color: black; opacity: 0.25; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+[dir="rtl"] .slick-slide {float: right;}
+[dir="rtl"] .slick-next:before {content: "\2190";}
+[dir="rtl"] .slick-prev:before {content: "\2192";}
+
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.size-35{min-width:1120px;width:1120px;min-height:653px;}
+.pos-34{position:relative;margin-left:-90px;margin-top:196px;}
+.size-36{min-width:265px;width:265px;min-height:42px;height:42px;}
+.pos-35{position:relative;margin-left:-235px;margin-top:71px;}
+.pos-36{position:relative;margin-left:52px;margin-top:0;}
+.size-37{min-width:742px;width:742px;min-height:653px;}
+.size-38{display:inline-block;height:618px;width:100%;}
+.js-7 .slider{height:618px;}
+.js-7 .slick-list{height:618px;}
+.js-7 .slick-prev, .js-7 .slick-next { height: 20px; width: 20px; margin-top: -10px; }
+.js-7 .slick-prev:before, .js-7 .slick-next:before { font-size: 20px; color: rgb(64,64,64); opacity: 0.75; }
+.js-7 .slick-prev { left: -25px; }
+.js-7 .slick-next { right: -25px; }
+.js-7 .slider-for { margin-bottom: 0px; }
+.js-7 .slider-nav { margin-bottom: 0px; visibility: hidden; }
+.js-7 .slider-nav img { border: solid 0px transparent; }
+.js-7 .slider-nav .slick-center img { border-color: transparent; }
+.js-7 .slick-dots { bottom: -35px; }
+.js-7 .slick-dots li { height: 20px; width: 20px; margin: 0 5px; }
+.js-7 .slick-dots li button { height: 20px; width: 20px; }
+.js-7 .slick-dots li button:before { width: 20px; height: 20px; font-size: 6px; line-height: 20px; }
+.js-7 .slick-dots li.slick-active button:before { color: rgb(64,64,64); opacity: 0.75; }
+[dir="rtl"] .js-7 .slick-next {right: auto;left: -25px;}
+[dir="rtl"] .js-7 .slick-prev {right: -25px;left: auto;}
+.slider img { width: 100%; }
+
+@media (max-width:1199px) {
+.size-35{min-width:311px;width:311px;min-height:271px;}
+.pos-34{margin-left:-93px;margin-top:69px;}
+.size-36{min-width:91px;width:91px;min-height:16px;height:16px;}
+.pos-35{margin-left:-83px;margin-top:27px;}
+.pos-36{margin-left:0;}
+.size-37{min-width:216px;width:216px;min-height:271px;}
+.size-38{height:236px;}
+.js-7 .slider{height:236px;}
+.js-7 .slick-list{height:236px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-37{position:relative;margin-left:-89px;margin-top:259px;}
+.size-39{min-width:265px;width:265px;min-height:42px;height:42px;}
+.pos-38{position:relative;margin-left:-236px;margin-top:71px;}
+.pos-39{position:relative;margin-left:-92px;margin-top:146px;}
+.img-7{position:absolute;left:133px;width:454px;height:641px;top:0;border:0;}
+.img-8{left:133px;width:454px;height:641px;top:0;display:inline-block;}
+@media (max-width:1199px) {
+.pos-37{margin-left:-93px;margin-top:90px;}
+.size-39{min-width:85px;width:85px;min-height:16px;height:16px;}
+.pos-38{margin-left:-77px;margin-top:27px;}
+.pos-39{margin-left:0;margin-top:5px;}
+.img-7{left:13px;width:191px;height:270px;}
+.img-8{left:13px;width:191px;height:270px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-40{position:relative;margin-left:-90px;margin-top:321px;}
+.size-40{min-width:120px;width:120px;min-height:42px;height:42px;}
+.pos-41{position:relative;margin-left:-90px;margin-top:71px;}
+.img-9{position:absolute;left:152px;width:416px;height:641px;top:0;border:0;}
+.img-10{left:152px;width:416px;height:641px;top:0;display:inline-block;}
+@media (max-width:1199px) {
+.pos-40{margin-left:-93px;margin-top:111px;}
+.size-40{min-width:41px;width:41px;min-height:16px;height:16px;}
+.pos-41{margin-left:-33px;margin-top:27px;}
+.img-9{left:21px;width:176px;height:270px;}
+.img-10{left:21px;width:176px;height:270px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-42{position:relative;margin-left:-90px;margin-top:384px;}
+.size-41{min-width:202px;width:202px;min-height:42px;height:42px;}
+.pos-43{position:relative;margin-left:-172px;margin-top:71px;}
+.pos-44{position:relative;margin-left:-92px;margin-top:145px;}
+.pos-45{position:relative;margin-left:52px;margin-top:0;}
+.js-13 .slider{height:618px;}
+.js-13 .slick-list{height:618px;}
+.js-13 .slick-prev, .js-13 .slick-next { height: 20px; width: 20px; margin-top: -10px; }
+.js-13 .slick-prev:before, .js-13 .slick-next:before { font-size: 20px; color: rgb(64,64,64); opacity: 0.75; }
+.js-13 .slick-prev { left: -25px; }
+.js-13 .slick-next { right: -25px; }
+.js-13 .slider-for { margin-bottom: 0px; }
+.js-13 .slider-nav { margin-bottom: 0px; visibility: hidden; }
+.js-13 .slider-nav img { border: solid 0px transparent; }
+.js-13 .slider-nav .slick-center img { border-color: transparent; }
+.js-13 .slick-dots { bottom: -35px; }
+.js-13 .slick-dots li { height: 20px; width: 20px; margin: 0 5px; }
+.js-13 .slick-dots li button { height: 20px; width: 20px; }
+.js-13 .slick-dots li button:before { width: 20px; height: 20px; font-size: 6px; line-height: 20px; }
+.js-13 .slick-dots li.slick-active button:before { color: rgb(64,64,64); opacity: 0.75; }
+[dir="rtl"] .js-13 .slick-next {right: auto;left: -25px;}
+[dir="rtl"] .js-13 .slick-prev {right: -25px;left: auto;}
+.slider img { width: 100%; }
+
+@media (max-width:1199px) {
+.pos-42{margin-left:-93px;margin-top:132px;}
+.size-41{min-width:66px;width:66px;min-height:16px;height:16px;}
+.pos-43{margin-left:-58px;margin-top:27px;}
+.pos-44{margin-left:-29px;margin-top:47px;}
+.pos-45{margin-left:95px;margin-top:-190px;}
+.js-13 .slider{height:236px;}
+.js-13 .slick-list{height:236px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-46{position:relative;margin-left:-89px;margin-top:446px;}
+.size-42{min-width:185px;width:185px;min-height:42px;height:42px;}
+.pos-47{position:relative;margin-left:-155px;margin-top:71px;}
+.pos-48{position:relative;margin-left:73px;margin-top:0;}
+.img-11{position:absolute;left:117px;width:486px;height:641px;top:0;border:0;}
+.img-12{left:117px;width:486px;height:641px;top:0;display:inline-block;}
+@media (max-width:1199px) {
+.pos-46{margin-left:-93px;margin-top:153px;}
+.size-42{min-width:63px;width:63px;min-height:16px;height:16px;}
+.pos-47{margin-left:-55px;margin-top:27px;}
+.pos-48{margin-left:93px;margin-top:-190px;}
+.img-11{left:7px;width:205px;height:270px;}
+.img-12{left:7px;width:205px;height:270px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-49{position:relative;margin-left:-90px;margin-top:509px;}
+.size-43{min-width:232px;width:232px;min-height:42px;height:42px;}
+.pos-50{position:relative;margin-left:-202px;margin-top:71px;}
+.size-44{min-width:272px;width:272px;min-height:417px;}
+.js-17 .slider{height:618px;}
+.js-17 .slick-list{height:618px;}
+.js-17 .slick-prev, .js-17 .slick-next { height: 20px; width: 20px; margin-top: -10px; }
+.js-17 .slick-prev:before, .js-17 .slick-next:before { font-size: 20px; color: rgb(64,64,64); opacity: 0.75; }
+.js-17 .slick-prev { left: -25px; }
+.js-17 .slick-next { right: -25px; }
+.js-17 .slider-for { margin-bottom: 0px; }
+.js-17 .slider-nav { margin-bottom: 0px; visibility: hidden; }
+.js-17 .slider-nav img { border: solid 0px transparent; }
+.js-17 .slider-nav .slick-center img { border-color: transparent; }
+.js-17 .slick-dots { bottom: -35px; }
+.js-17 .slick-dots li { height: 20px; width: 20px; margin: 0 5px; }
+.js-17 .slick-dots li button { height: 20px; width: 20px; }
+.js-17 .slick-dots li button:before { width: 20px; height: 20px; font-size: 6px; line-height: 20px; }
+.js-17 .slick-dots li.slick-active button:before { color: rgb(64,64,64); opacity: 0.75; }
+[dir="rtl"] .js-17 .slick-next {right: auto;left: -25px;}
+[dir="rtl"] .js-17 .slick-prev {right: -25px;left: auto;}
+.slider img { width: 100%; }
+
+@media (max-width:1199px) {
+.pos-49{margin-left:-93px;margin-top:174px;}
+.size-43{min-width:81px;width:81px;min-height:16px;height:16px;}
+.pos-50{margin-left:-73px;margin-top:27px;}
+.size-44{min-width:87px;width:87px;min-height:142px;}
+.js-17 .slider{height:236px;}
+.js-17 .slick-list{height:236px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.size-45{min-width:122px;width:122px;min-height:24px;height:24px;}
+.pos-51{position:relative;margin-left:-98px;margin-top:71px;}
+.size-46{min-width:199px;width:199px;min-height:105px;}
+.size-47{min-width:199px;width:199px;min-height:42px;height:42px;}
+.pos-52{position:relative;margin-left:30px;margin-top:21px;}
+.size-48{min-width:135px;width:135px;min-height:42px;height:42px;}
+.pos-53{position:relative;margin-left:155px;margin-top:0;}
+.js-19 .slider{height:618px;}
+.js-19 .slick-list{height:618px;}
+.js-19 .slick-prev, .js-19 .slick-next { height: 20px; width: 20px; margin-top: -10px; }
+.js-19 .slick-prev:before, .js-19 .slick-next:before { font-size: 20px; color: rgb(64,64,64); opacity: 0.75; }
+.js-19 .slick-prev { left: -25px; }
+.js-19 .slick-next { right: -25px; }
+.js-19 .slider-for { margin-bottom: 0px; }
+.js-19 .slider-nav { margin-bottom: 0px; visibility: hidden; }
+.js-19 .slider-nav img { border: solid 0px transparent; }
+.js-19 .slider-nav .slick-center img { border-color: transparent; }
+.js-19 .slick-dots { bottom: -35px; }
+.js-19 .slick-dots li { height: 20px; width: 20px; margin: 0 5px; }
+.js-19 .slick-dots li button { height: 20px; width: 20px; }
+.js-19 .slick-dots li button:before { width: 20px; height: 20px; font-size: 6px; line-height: 20px; }
+.js-19 .slick-dots li.slick-active button:before { color: rgb(64,64,64); opacity: 0.75; }
+[dir="rtl"] .js-19 .slick-next {right: auto;left: -25px;}
+[dir="rtl"] .js-19 .slick-prev {right: -25px;left: auto;}
+.slider img { width: 100%; }
+
+@media (max-width:1199px) {
+.size-45{min-width:87px;width:87px;min-height:18px;height:18px;}
+.pos-51{margin-left:-95px;margin-top:27px;}
+.size-46{min-width:89px;width:89px;min-height:37px;}
+.size-47{min-width:66px;width:66px;min-height:16px;height:16px;}
+.pos-52{margin-left:8px;margin-top:5px;}
+.size-48{min-width:81px;width:81px;min-height:16px;height:16px;}
+.pos-53{margin-left:6px;}
+.js-19 .slider{height:236px;}
+.js-19 .slick-list{height:236px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-54{position:relative;margin-left:-97px;margin-top:134px;}
+.size-49{min-width:161px;width:161px;min-height:42px;height:42px;}
+.pos-55{position:relative;margin-left:-132px;margin-top:71px;}
+.size-50{min-width:199px;width:199px;min-height:42px;height:42px;}
+.pos-56{position:relative;margin-left:125px;margin-top:0;}
+.js-21 .slider{height:618px;}
+.js-21 .slick-list{height:618px;}
+.js-21 .slick-prev, .js-21 .slick-next { height: 20px; width: 20px; margin-top: -10px; }
+.js-21 .slick-prev:before, .js-21 .slick-next:before { font-size: 20px; color: rgb(64,64,64); opacity: 0.75; }
+.js-21 .slick-prev { left: -25px; }
+.js-21 .slick-next { right: -25px; }
+.js-21 .slider-for { margin-bottom: 0px; }
+.js-21 .slider-nav { margin-bottom: 0px; visibility: hidden; }
+.js-21 .slider-nav img { border: solid 0px transparent; }
+.js-21 .slider-nav .slick-center img { border-color: transparent; }
+.js-21 .slick-dots { bottom: -35px; }
+.js-21 .slick-dots li { height: 20px; width: 20px; margin: 0 5px; }
+.js-21 .slick-dots li button { height: 20px; width: 20px; }
+.js-21 .slick-dots li button:before { width: 20px; height: 20px; font-size: 6px; line-height: 20px; }
+.js-21 .slick-dots li.slick-active button:before { color: rgb(64,64,64); opacity: 0.75; }
+[dir="rtl"] .js-21 .slick-next {right: auto;left: -25px;}
+[dir="rtl"] .js-21 .slick-prev {right: -25px;left: auto;}
+.slider img { width: 100%; }
+
+@media (max-width:1199px) {
+.pos-54{margin-left:-95px;margin-top:48px;}
+.size-49{min-width:81px;width:81px;min-height:16px;height:16px;}
+.pos-55{margin-left:-73px;margin-top:27px;}
+.size-50{min-width:87px;width:87px;min-height:16px;height:16px;}
+.pos-56{margin-left:0;}
+.js-21 .slider{height:236px;}
+.js-21 .slick-list{height:236px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-57{position:relative;margin-left:-121px;margin-top:123px;}
+.size-51{min-width:55px;width:55px;min-height:27px;height:27px;}
+.pos-58{position:relative;margin-left:-29px;margin-top:195px;}
+.size-52{min-width:1081px;width:1081px;min-height:554px;}
+.pos-59{position:relative;margin-left:0;margin-top:0;}
+.size-53{min-width:136px;width:136px;min-height:482px;}
+.size-54{min-width:136px;width:136px;min-height:47px;height:47px;}
+.pos-60{position:relative;margin-left:29px;margin-top:77px;}
+.size-55{min-width:53px;width:53px;min-height:45px;height:45px;}
+.pos-61{position:relative;margin-left:29px;margin-top:18px;}
+.size-56{min-width:106px;width:106px;min-height:45px;height:45px;}
+.pos-62{position:relative;margin-left:29px;margin-top:17px;}
+.size-57{min-width:53px;width:53px;min-height:45px;height:45px;}
+.pos-63{position:relative;margin-left:-53px;margin-top:80px;}
+.size-58{min-width:53px;width:53px;min-height:45px;height:45px;}
+.size-59{min-width:106px;width:106px;min-height:45px;height:45px;}
+.size-60{min-width:106px;width:106px;min-height:45px;height:45px;}
+.pos-64{position:relative;margin-left:-107px;margin-top:62px;}
+.size-61{min-width:128px;width:128px;min-height:45px;height:45px;}
+.pos-65{position:relative;margin-left:179px;margin-top:0;}
+.size-62{min-width:745px;width:745px;min-height:554px;height:554px;}
+.font-12{font-family:"PingFang SC", sans-serif;font-size:30px;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;color:rgb(64,64,64);background-color:initial;line-height:59px;letter-spacing:normal;text-shadow:none;}
+.font-13{font-family:"PingFang SC", sans-serif;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;color:rgb(0,0,0);background-color:initial;line-height:36px;letter-spacing:normal;text-shadow:none;}
+.font-14{font-family:"PingFang SC", sans-serif;font-size:18px;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;color:rgb(64,64,64);background-color:initial;line-height:36px;letter-spacing:normal;text-shadow:none;}
+.font-15{font-family:"PingFang SC", sans-serif;font-size:14px;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;color:rgb(64,64,64);background-color:initial;line-height:28px;letter-spacing:normal;text-shadow:none;}
+@media (max-width:1199px) {
+.pos-57{margin-left:-85px;margin-top:84px;}
+.size-51{min-width:85px;width:85px;min-height:18px;height:18px;}
+.pos-58{margin-left:6px;margin-top:-7px;}
+.size-52{min-width:296px;width:296px;min-height:248px;}
+.pos-59{margin-top:16px;}
+.size-53{min-width:67px;width:67px;min-height:163px;}
+.size-54{min-width:44px;width:44px;min-height:16px;height:16px;}
+.pos-60{margin-left:-36px;margin-top:42px;}
+.size-55{min-width:21px;width:21px;min-height:16px;height:16px;}
+.pos-61{margin-left:8px;margin-top:5px;}
+.size-56{min-width:41px;width:41px;min-height:16px;height:16px;}
+.pos-62{margin-left:8px;margin-top:5px;}
+.size-57{min-width:41px;width:41px;min-height:16px;height:16px;}
+.pos-63{margin-left:8px;margin-top:5px;}
+.size-58{min-width:59px;width:59px;min-height:16px;height:16px;}
+.size-59{min-width:55px;width:55px;min-height:16px;height:16px;}
+.size-60{min-width:36px;width:36px;min-height:16px;height:16px;}
+.pos-64{margin-left:-59px;margin-top:37px;}
+.size-61{min-width:44px;width:44px;min-height:16px;height:16px;}
+.pos-65{margin-left:45px;}
+.size-62{min-width:199px;width:199px;min-height:248px;height:248px;}
+.font-13{font-size:4px;line-height:8px;}
+.font-14{font-size:13px;line-height:25px;}
+.font-15{font-size:10px;line-height:20px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-66{position:relative;margin-left:-29px;margin-top:194px;}
+.size-63{min-width:1094px;width:1094px;min-height:554px;}
+.pos-67{position:relative;margin-left:0;margin-top:62px;}
+.size-64{min-width:152px;width:152px;min-height:421px;}
+.size-65{min-width:152px;width:152px;min-height:49px;height:49px;}
+.pos-68{position:relative;margin-left:29px;margin-top:14px;}
+.pos-69{position:relative;margin-left:-123px;margin-top:0;}
+.pos-70{position:relative;margin-left:184px;margin-top:0;}
+.size-66{min-width:745px;width:745px;min-height:554px;height:554px;}
+@media (max-width:1199px) {
+.pos-66{margin-left:6px;margin-top:-7px;}
+.size-63{min-width:296px;width:296px;min-height:369px;}
+.pos-67{margin-top:37px;}
+.size-64{min-width:67px;width:67px;min-height:142px;}
+.size-65{min-width:49px;width:49px;min-height:16px;height:16px;}
+.pos-68{margin-left:8px;margin-top:5px;}
+.pos-69{margin-left:-59px;margin-top:16px;}
+.pos-70{margin-left:45px;}
+.size-66{min-width:199px;width:199px;min-height:369px;height:369px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-71{position:relative;margin-left:-30px;margin-top:194px;}
+.size-67{min-width:1095px;width:1095px;min-height:627px;}
+.pos-72{position:relative;margin-left:0;margin-top:125px;}
+.size-68{min-width:80px;width:80px;min-height:47px;height:47px;}
+.pos-73{position:relative;margin-left:-50px;margin-top:0;}
+.size-69{min-width:152px;width:152px;min-height:484px;}
+.pos-74{position:relative;margin-left:0;margin-top:15px;}
+.pos-75{position:relative;margin-left:0;margin-top:77px;}
+.pos-76{position:relative;margin-left:0;margin-top:17px;}
+.pos-77{position:relative;margin-left:-53px;margin-top:80px;}
+.pos-78{position:relative;margin-left:1px;margin-top:19px;}
+.pos-79{position:relative;margin-left:168px;margin-top:0;}
+.size-70{min-width:745px;width:745px;min-height:627px;height:627px;}
+@media (max-width:1199px) {
+.pos-71{margin-left:6px;margin-top:-7px;}
+.size-67{min-width:296px;width:296px;min-height:458px;}
+.pos-72{margin-top:58px;}
+.size-68{min-width:28px;width:28px;min-height:16px;height:16px;}
+.pos-73{margin-left:-20px;margin-top:16px;}
+.size-69{min-width:59px;width:59px;min-height:163px;}
+.pos-74{margin-top:5px;}
+.pos-75{margin-top:26px;}
+.pos-76{margin-top:5px;}
+.pos-77{margin-left:0;margin-top:5px;}
+.pos-78{margin-left:0;margin-top:5px;}
+.pos-79{margin-left:30px;}
+.size-70{min-width:199px;width:199px;min-height:458px;height:458px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-80{position:relative;margin-left:-31px;margin-top:194px;}
+.size-71{min-width:1096px;width:1096px;min-height:1467px;}
+.pos-81{position:relative;margin-left:0;margin-top:188px;}
+.size-72{min-width:136px;width:136px;min-height:49px;height:49px;}
+.pos-82{position:relative;margin-left:-105px;margin-top:0;}
+.size-73{min-width:152px;width:152px;min-height:483px;}
+.pos-83{position:relative;margin-left:0;margin-top:14px;}
+.pos-84{position:relative;margin-left:-80px;margin-top:139px;}
+.pos-85{position:relative;margin-left:-53px;margin-top:202px;}
+.pos-86{position:relative;margin-left:0;margin-top:18px;}
+.size-74{min-width:745px;width:745px;min-height:1467px;height:1467px;}
+@media (max-width:1199px) {
+.pos-80{margin-left:6px;margin-top:-7px;}
+.size-71{min-width:296px;width:296px;min-height:1073px;}
+.pos-81{margin-top:79px;}
+.size-72{min-width:41px;width:41px;min-height:16px;height:16px;}
+.pos-82{margin-left:-33px;margin-top:16px;}
+.size-73{min-width:59px;width:59px;min-height:163px;}
+.pos-83{margin-top:5px;}
+.pos-84{margin-left:0;margin-top:26px;}
+.pos-85{margin-left:0;margin-top:5px;}
+.pos-86{margin-top:5px;}
+.size-74{min-width:199px;width:199px;min-height:1073px;height:1073px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.size-75{min-width:1095px;width:1095px;min-height:972px;}
+.pos-87{position:relative;margin-left:0;margin-top:250px;}
+.size-76{min-width:80px;width:80px;min-height:48px;height:48px;}
+.pos-88{position:relative;margin-left:-50px;margin-top:0;}
+.pos-89{position:relative;margin-left:0;margin-top:16px;}
+.pos-90{position:relative;margin-left:0;margin-top:76px;}
+.size-77{min-width:745px;width:745px;min-height:972px;height:972px;}
+@media (max-width:1199px) {
+.size-75{min-width:296px;width:296px;min-height:648px;}
+.pos-87{margin-top:100px;}
+.size-76{min-width:41px;width:41px;min-height:16px;height:16px;}
+.pos-88{margin-left:-33px;margin-top:16px;}
+.pos-89{margin-top:5px;}
+.pos-90{margin-top:26px;}
+.size-77{min-width:199px;width:199px;min-height:648px;height:648px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.size-78{min-width:1095px;width:1095px;min-height:972px;}
+.pos-91{position:relative;margin-left:0;margin-top:313px;}
+.size-79{min-width:80px;width:80px;min-height:48px;height:48px;}
+.pos-92{position:relative;margin-left:-50px;margin-top:0;}
+.size-80{min-width:152px;width:152px;min-height:483px;}
+.pos-93{position:relative;margin-left:0;margin-top:13px;}
+.pos-94{position:relative;margin-left:168px;margin-top:0;}
+.size-81{min-width:745px;width:745px;min-height:972px;height:972px;}
+@media (max-width:1199px) {
+.size-78{min-width:296px;width:296px;min-height:203px;}
+.pos-91{margin-top:121px;}
+.size-79{min-width:59px;width:59px;min-height:16px;height:16px;}
+.pos-92{margin-left:-51px;margin-top:16px;}
+.size-80{min-width:55px;width:55px;min-height:163px;}
+.pos-93{margin-top:5px;}
+.pos-94{margin-left:34px;}
+.size-81{min-width:199px;width:199px;min-height:203px;height:203px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.size-82{min-width:1095px;width:1095px;min-height:1467px;}
+.pos-95{position:relative;margin-left:0;margin-top:375px;}
+.size-83{min-width:136px;width:136px;min-height:48px;height:48px;}
+.pos-96{position:relative;margin-left:-106px;margin-top:0;}
+.size-84{min-width:745px;width:745px;min-height:1467px;height:1467px;}
+@media (max-width:1199px) {
+.size-82{min-width:296px;width:296px;min-height:992px;}
+.pos-95{margin-top:142px;}
+.size-83{min-width:55px;width:55px;min-height:16px;height:16px;}
+.pos-96{margin-left:-47px;margin-top:16px;}
+.size-84{min-width:199px;width:199px;min-height:992px;height:992px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.size-85{min-width:1096px;width:1096px;min-height:591px;}
+.pos-97{position:relative;margin-left:0;margin-top:438px;}
+.size-86{min-width:136px;width:136px;min-height:48px;height:48px;}
+.size-87{min-width:152px;width:152px;min-height:423px;}
+.size-88{min-width:745px;width:745px;min-height:591px;height:591px;}
+@media (max-width:1199px) {
+.size-85{min-width:296px;width:296px;min-height:383px;}
+.pos-97{margin-top:163px;}
+.size-86{min-width:41px;width:41px;min-height:16px;height:16px;}
+.size-87{min-width:59px;width:59px;min-height:142px;}
+.size-88{min-width:199px;width:199px;min-height:383px;height:383px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.size-89{min-width:1120px;width:1120px;min-height:653px;}
+.size-90{min-width:54px;width:54px;min-height:27px;height:27px;}
+.pos-98{position:relative;margin-left:-29px;margin-top:71px;}
+.size-91{min-width:183px;width:183px;min-height:42px;height:42px;}
+.pos-99{position:relative;margin-left:-153px;margin-top:134px;}
+.size-92{min-width:290px;width:290px;min-height:353px;}
+.size-93{min-width:101px;width:101px;min-height:42px;height:42px;}
+.size-94{min-width:201px;width:201px;min-height:42px;height:42px;}
+.size-95{min-width:290px;width:290px;min-height:41px;height:41px;}
+.pos-100{position:relative;margin-left:0;margin-top:22px;}
+.size-96{min-width:77px;width:77px;min-height:42px;height:42px;}
+.size-97{min-width:290px;width:290px;min-height:41px;height:41px;}
+.pos-101{position:relative;margin-left:33px;margin-top:0;}
+.js-23 .slider{height:618px;}
+.js-23 .slick-list{height:618px;}
+.js-23 .slick-prev, .js-23 .slick-next { height: 20px; width: 20px; margin-top: -10px; }
+.js-23 .slick-prev:before, .js-23 .slick-next:before { font-size: 20px; color: rgb(64,64,64); opacity: 0.75; }
+.js-23 .slick-prev { left: -25px; }
+.js-23 .slick-next { right: -25px; }
+.js-23 .slider-for { margin-bottom: 0px; }
+.js-23 .slider-nav { margin-bottom: 0px; visibility: hidden; }
+.js-23 .slider-nav img { border: solid 0px transparent; }
+.js-23 .slider-nav .slick-center img { border-color: transparent; }
+.js-23 .slick-dots { bottom: -35px; }
+.js-23 .slick-dots li { height: 20px; width: 20px; margin: 0 5px; }
+.js-23 .slick-dots li button { height: 20px; width: 20px; }
+.js-23 .slick-dots li button:before { width: 20px; height: 20px; font-size: 6px; line-height: 20px; }
+.js-23 .slick-dots li.slick-active button:before { color: rgb(64,64,64); opacity: 0.75; }
+[dir="rtl"] .js-23 .slick-next {right: auto;left: -25px;}
+[dir="rtl"] .js-23 .slick-prev {right: -25px;left: auto;}
+.slider img { width: 100%; }
+
+@media (max-width:1199px) {
+.size-89{min-width:313px;width:313px;min-height:271px;}
+.size-90{min-width:85px;width:85px;min-height:18px;height:18px;}
+.pos-98{margin-left:-95px;margin-top:27px;}
+.size-91{min-width:87px;width:87px;min-height:16px;height:16px;}
+.pos-99{margin-left:-77px;margin-top:48px;}
+.size-92{min-width:104px;width:104px;min-height:121px;}
+.size-93{min-width:70px;width:70px;min-height:16px;height:16px;}
+.size-94{min-width:77px;width:77px;min-height:16px;height:16px;}
+.size-95{min-width:101px;width:101px;min-height:16px;height:16px;}
+.pos-100{margin-top:5px;}
+.size-96{min-width:59px;width:59px;min-height:16px;height:16px;}
+.size-97{min-width:104px;width:104px;min-height:16px;height:16px;}
+.pos-101{margin-left:97px;margin-top:-169px;}
+.js-23 .slider{height:236px;}
+.js-23 .slick-list{height:236px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-102{position:relative;margin-left:-29px;margin-top:134px;}
+.size-98{min-width:131px;width:131px;min-height:42px;height:42px;}
+.pos-103{position:relative;margin-left:-101px;margin-top:71px;}
+.size-99{min-width:290px;width:290px;min-height:416px;}
+.size-100{min-width:290px;width:290px;min-height:41px;height:41px;}
+.pos-104{position:relative;margin-left:33px;margin-top:0;}
+.js-25 .slider{height:618px;}
+.js-25 .slick-list{height:618px;}
+.js-25 .slick-prev, .js-25 .slick-next { height: 20px; width: 20px; margin-top: -10px; }
+.js-25 .slick-prev:before, .js-25 .slick-next:before { font-size: 20px; color: rgb(64,64,64); opacity: 0.75; }
+.js-25 .slick-prev { left: -25px; }
+.js-25 .slick-next { right: -25px; }
+.js-25 .slider-for { margin-bottom: 0px; }
+.js-25 .slider-nav { margin-bottom: 0px; visibility: hidden; }
+.js-25 .slider-nav img { border: solid 0px transparent; }
+.js-25 .slider-nav .slick-center img { border-color: transparent; }
+.js-25 .slick-dots { bottom: -35px; }
+.js-25 .slick-dots li { height: 20px; width: 20px; margin: 0 5px; }
+.js-25 .slick-dots li button { height: 20px; width: 20px; }
+.js-25 .slick-dots li button:before { width: 20px; height: 20px; font-size: 6px; line-height: 20px; }
+.js-25 .slick-dots li.slick-active button:before { color: rgb(64,64,64); opacity: 0.75; }
+[dir="rtl"] .js-25 .slick-next {right: auto;left: -25px;}
+[dir="rtl"] .js-25 .slick-prev {right: -25px;left: auto;}
+.slider img { width: 100%; }
+
+@media (max-width:1199px) {
+.pos-102{margin-left:-93px;margin-top:48px;}
+.size-98{min-width:70px;width:70px;min-height:16px;height:16px;}
+.pos-103{margin-left:-62px;margin-top:27px;}
+.size-99{min-width:99px;width:99px;min-height:142px;}
+.size-100{min-width:99px;width:99px;min-height:16px;height:16px;}
+.pos-104{margin-left:95px;margin-top:-169px;}
+.js-25 .slider{height:236px;}
+.js-25 .slick-list{height:236px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-105{position:relative;margin-left:-28px;margin-top:196px;}
+.size-101{min-width:265px;width:265px;min-height:42px;height:42px;}
+.pos-106{position:relative;margin-left:-236px;margin-top:71px;}
+.js-27 .slider{height:618px;}
+.js-27 .slick-list{height:618px;}
+.js-27 .slick-prev, .js-27 .slick-next { height: 20px; width: 20px; margin-top: -10px; }
+.js-27 .slick-prev:before, .js-27 .slick-next:before { font-size: 20px; color: rgb(64,64,64); opacity: 0.75; }
+.js-27 .slick-prev { left: -25px; }
+.js-27 .slick-next { right: -25px; }
+.js-27 .slider-for { margin-bottom: 0px; }
+.js-27 .slider-nav { margin-bottom: 0px; visibility: hidden; }
+.js-27 .slider-nav img { border: solid 0px transparent; }
+.js-27 .slider-nav .slick-center img { border-color: transparent; }
+.js-27 .slick-dots { bottom: -35px; }
+.js-27 .slick-dots li { height: 20px; width: 20px; margin: 0 5px; }
+.js-27 .slick-dots li button { height: 20px; width: 20px; }
+.js-27 .slick-dots li button:before { width: 20px; height: 20px; font-size: 6px; line-height: 20px; }
+.js-27 .slick-dots li.slick-active button:before { color: rgb(64,64,64); opacity: 0.75; }
+[dir="rtl"] .js-27 .slick-next {right: auto;left: -25px;}
+[dir="rtl"] .js-27 .slick-prev {right: -25px;left: auto;}
+.slider img { width: 100%; }
+
+@media (max-width:1199px) {
+.pos-105{margin-left:-93px;margin-top:69px;}
+.size-101{min-width:95px;width:95px;min-height:16px;height:16px;}
+.pos-106{margin-left:-87px;margin-top:27px;}
+.js-27 .slider{height:236px;}
+.js-27 .slick-list{height:236px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-107{position:relative;margin-left:-29px;margin-top:259px;}
+.size-102{min-width:215px;width:215px;min-height:42px;height:42px;}
+.pos-108{position:relative;margin-left:-185px;margin-top:71px;}
+.js-29 .slider{height:618px;}
+.js-29 .slick-list{height:618px;}
+.js-29 .slick-prev, .js-29 .slick-next { height: 20px; width: 20px; margin-top: -10px; }
+.js-29 .slick-prev:before, .js-29 .slick-next:before { font-size: 20px; color: rgb(64,64,64); opacity: 0.75; }
+.js-29 .slick-prev { left: -25px; }
+.js-29 .slick-next { right: -25px; }
+.js-29 .slider-for { margin-bottom: 0px; }
+.js-29 .slider-nav { margin-bottom: 0px; visibility: hidden; }
+.js-29 .slider-nav img { border: solid 0px transparent; }
+.js-29 .slider-nav .slick-center img { border-color: transparent; }
+.js-29 .slick-dots { bottom: -35px; }
+.js-29 .slick-dots li { height: 20px; width: 20px; margin: 0 5px; }
+.js-29 .slick-dots li button { height: 20px; width: 20px; }
+.js-29 .slick-dots li button:before { width: 20px; height: 20px; font-size: 6px; line-height: 20px; }
+.js-29 .slick-dots li.slick-active button:before { color: rgb(64,64,64); opacity: 0.75; }
+[dir="rtl"] .js-29 .slick-next {right: auto;left: -25px;}
+[dir="rtl"] .js-29 .slick-prev {right: -25px;left: auto;}
+.slider img { width: 100%; }
+
+@media (max-width:1199px) {
+.pos-107{margin-left:-93px;margin-top:90px;}
+.size-102{min-width:77px;width:77px;min-height:16px;height:16px;}
+.pos-108{margin-left:-69px;margin-top:27px;}
+.js-29 .slider{height:236px;}
+.js-29 .slick-list{height:236px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-109{position:relative;margin-left:-29px;margin-top:71px;}
+.size-103{min-width:320px;width:320px;min-height:416px;}
+.pos-110{position:relative;margin-left:30px;margin-top:0;}
+.pos-111{position:relative;margin-left:30px;margin-top:20px;}
+.size-104{min-width:320px;width:320px;min-height:41px;height:41px;}
+.font-16{font-family:"TypoPRO Montserrat";font-size:24px;font-weight:700;font-style:normal;text-decoration:none;text-transform:none;color:rgb(0,0,0);background-color:initial;line-height:41px;letter-spacing:normal;text-shadow:none;}
+.pos-112{position:relative;margin-left:30px;margin-top:22px;}
+.js-31 .slider{height:618px;}
+.js-31 .slick-list{height:618px;}
+.js-31 .slick-prev, .js-31 .slick-next { height: 20px; width: 20px; margin-top: -10px; }
+.js-31 .slick-prev:before, .js-31 .slick-next:before { font-size: 20px; color: rgb(64,64,64); opacity: 0.75; }
+.js-31 .slick-prev { left: -25px; }
+.js-31 .slick-next { right: -25px; }
+.js-31 .slider-for { margin-bottom: 0px; }
+.js-31 .slider-nav { margin-bottom: 0px; visibility: hidden; }
+.js-31 .slider-nav img { border: solid 0px transparent; }
+.js-31 .slider-nav .slick-center img { border-color: transparent; }
+.js-31 .slick-dots { bottom: -35px; }
+.js-31 .slick-dots li { height: 20px; width: 20px; margin: 0 5px; }
+.js-31 .slick-dots li button { height: 20px; width: 20px; }
+.js-31 .slick-dots li button:before { width: 20px; height: 20px; font-size: 6px; line-height: 20px; }
+.js-31 .slick-dots li.slick-active button:before { color: rgb(64,64,64); opacity: 0.75; }
+[dir="rtl"] .js-31 .slick-next {right: auto;left: -25px;}
+[dir="rtl"] .js-31 .slick-prev {right: -25px;left: auto;}
+.slider img { width: 100%; }
+
+@media (max-width:1199px) {
+.pos-109{margin-left:-93px;margin-top:27px;}
+.size-103{min-width:108px;width:108px;min-height:142px;}
+.pos-110{margin-left:8px;}
+.pos-111{margin-left:8px;margin-top:5px;}
+.size-104{min-width:108px;width:108px;min-height:16px;height:16px;}
+.font-16{font-size:8px;color:rgb(239,181,0);line-height:13px;}
+.pos-112{margin-left:8px;margin-top:5px;}
+.js-31 .slider{height:236px;}
+.js-31 .slick-list{height:236px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-113{position:relative;margin-left:-29px;margin-top:384px;}
+.size-105{min-width:105px;width:105px;min-height:42px;height:42px;}
+.pos-114{position:relative;margin-left:-75px;margin-top:71px;}
+.pos-115{position:relative;margin-left:-183px;margin-top:63px;}
+.pos-116{position:relative;margin-left:0;margin-top:84px;}
+.pos-117{position:relative;margin-left:3px;margin-top:0;}
+.js-33 .slider{height:618px;}
+.js-33 .slick-list{height:618px;}
+.js-33 .slick-prev, .js-33 .slick-next { height: 20px; width: 20px; margin-top: -10px; }
+.js-33 .slick-prev:before, .js-33 .slick-next:before { font-size: 20px; color: rgb(64,64,64); opacity: 0.75; }
+.js-33 .slick-prev { left: -25px; }
+.js-33 .slick-next { right: -25px; }
+.js-33 .slider-for { margin-bottom: 0px; }
+.js-33 .slider-nav { margin-bottom: 0px; visibility: hidden; }
+.js-33 .slider-nav img { border: solid 0px transparent; }
+.js-33 .slider-nav .slick-center img { border-color: transparent; }
+.js-33 .slick-dots { bottom: -35px; }
+.js-33 .slick-dots li { height: 20px; width: 20px; margin: 0 5px; }
+.js-33 .slick-dots li button { height: 20px; width: 20px; }
+.js-33 .slick-dots li button:before { width: 20px; height: 20px; font-size: 6px; line-height: 20px; }
+.js-33 .slick-dots li.slick-active button:before { color: rgb(64,64,64); opacity: 0.75; }
+[dir="rtl"] .js-33 .slick-next {right: auto;left: -25px;}
+[dir="rtl"] .js-33 .slick-prev {right: -25px;left: auto;}
+.slider img { width: 100%; }
+
+@media (max-width:1199px) {
+.pos-113{margin-left:-93px;margin-top:132px;}
+.size-105{min-width:59px;width:59px;min-height:16px;height:16px;}
+.pos-114{margin-left:-51px;margin-top:27px;}
+.pos-115{margin-left:0;margin-top:5px;}
+.pos-116{margin-top:26px;}
+.pos-117{margin-left:95px;margin-top:-169px;}
+.js-33 .slider{height:236px;}
+.js-33 .slick-list{height:236px;}
+}
+@font-face{font-family:"Gilroy-Bold";src:url('Gilroy-Bold.woff的副本.ttf') format('truetype');font-weight:400;}
+@font-face{font-family:"TypoPRO Montserrat";src:url('TypoPRO-Montserrat-Bold的副本.ttf') format('truetype');font-weight:700;}
+.pos-118{position:relative;margin-left:-29px;margin-top:446px;}
+.size-106{min-width:320px;width:320px;min-height:41px;height:41px;}
+.pos-119{position:relative;margin-left:-290px;margin-top:71px;}
+.size-107{min-width:320px;width:320px;min-height:355px;}
+.js-35 .slider{height:618px;}
+.js-35 .slick-list{height:618px;}
+.js-35 .slick-prev, .js-35 .slick-next { height: 20px; width: 20px; margin-top: -10px; }
+.js-35 .slick-prev:before, .js-35 .slick-next:before { font-size: 20px; color: rgb(64,64,64); opacity: 0.75; }
+.js-35 .slick-prev { left: -25px; }
+.js-35 .slick-next { right: -25px; }
+.js-35 .slider-for { margin-bottom: 0px; }
+.js-35 .slider-nav { margin-bottom: 0px; visibility: hidden; }
+.js-35 .slider-nav img { border: solid 0px transparent; }
+.js-35 .slider-nav .slick-center img { border-color: transparent; }
+.js-35 .slick-dots { bottom: -35px; }
+.js-35 .slick-dots li { height: 20px; width: 20px; margin: 0 5px; }
+.js-35 .slick-dots li button { height: 20px; width: 20px; }
+.js-35 .slick-dots li button:before { width: 20px; height: 20px; font-size: 6px; line-height: 20px; }
+.js-35 .slick-dots li.slick-active button:before { color: rgb(64,64,64); opacity: 0.75; }
+[dir="rtl"] .js-35 .slick-next {right: auto;left: -25px;}
+[dir="rtl"] .js-35 .slick-prev {right: -25px;left: auto;}
+.slider img { width: 100%; }
+
+@media (max-width:1199px) {
+.pos-118{margin-left:-93px;margin-top:153px;}
+.size-106{min-width:104px;width:104px;min-height:16px;height:16px;}
+.pos-119{margin-left:-96px;margin-top:27px;}
+.size-107{min-width:108px;width:108px;min-height:121px;}
+.js-35 .slider{height:236px;}
+.js-35 .slick-list{height:236px;}
+}
